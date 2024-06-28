@@ -1,0 +1,40 @@
+{
+	"schemaVersion": 1,
+	"id": "coop",
+	"version": "${version}",
+	"name": "CoOp+",
+	"description": "Adds elements that seek to enhance and incentivise multiplayer experiences.",
+	"authors": [
+		"epeon"
+	],
+	"contact": {
+		"homepage": "https://fabricmc.net/",
+		"sources": "https://github.com/FabricMC/fabric-example-mod"
+	},
+	"license": "MIT",
+	"icon": "assets/coop/icon.png",
+	"environment": "*",
+	"entrypoints": {
+		"main": [
+			"net.epeon.coopplus.CoOpPlus"
+		],
+		"client": [
+			"net.epeon.coopplus.CoOpPlusClient"
+		],
+		"fabric-datagen": [
+			"net.epeon.coopplus.CoOpPlusDataGenerator"
+		]
+	},
+	"mixins": [
+		"coop.mixins.json"
+	],
+	"depends": {
+		"fabricloader": ">=0.15.11",
+		"minecraft": "~1.20.1",
+		"java": ">=17",
+		"fabric-api": "*"
+	},
+	"suggests": {
+		"another-mod": "*"
+	}
+}
